@@ -1,5 +1,13 @@
 // Using recursion and memo table
 
+TC : O(N^2)
+It is Top-Down DP with Memoization (DFS + Memo).
+For each pivot position in s:
+Try all possible substrings starting from pivot, i.e., s[pivot:i+1] for i = pivot to s.length()-1.
+For each valid prefix in wordDict, recursively check the suffix (helper(s, i+1)).
+
+SC : O(N)
+Where N it the length of the string.
 
 
 class Solution {
